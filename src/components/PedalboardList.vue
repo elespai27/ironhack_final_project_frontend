@@ -48,7 +48,7 @@ export default {
       }
       try {
         await axios.post(`http://localhost:8080/api/pedalboards`, {
-          pedalBoardName: this.newName,  // ← Cambiado de 'name' a 'pedalBoardName'
+          pedalBoardName: this.newName,
           userId: this.userId
         });
         this.newName = '';
