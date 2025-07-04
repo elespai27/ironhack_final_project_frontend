@@ -35,7 +35,7 @@ export default {
           pedalName: this.name,
           pedalType: this.type,
           pedalBypass: this.bypass,
-          pedalParameters: JSON.parse(this.parameters),
+          pedalParameters: JSON.stringify(this.parameters),
           pedalBoardId: this.pedalboardId
         });
         this.name = '';
